@@ -1,0 +1,116 @@
+.details{
+    padding: 10px 60px;
+    margin: 20px 0px;
+    color: #6c757d;
+}
+.details a{
+    color: rgb(255, 111, 97);
+    text-decoration: none;
+}
+.details a:hover{
+    color: black;
+}
+
+.product-list-left{
+    float: left;
+    width: 60%;
+    margin: 15px 20px 15px 0px;
+    padding: 0px 0px 10px 60px;
+}
+
+.product-list-right{
+    float: left;
+    width: 30%;
+    background-color: white;
+    margin:15px 60px 10px 0px;
+    padding-top: 10px;
+}
+
+
+/**   left    */
+/*  product-list-search    */
+.product-list-search{
+    background: white;
+    padding: 20px 20px;
+}
+/*.product-list-search div{
+    
+}*/
+.product-list-search-div{
+    float: left;
+    width: 31%;
+    position: relative;
+    margin: 5px 9px;
+}
+.product-list-search-div form{
+    margin-bottom: 0px;
+}
+.product-list-search input{
+    height: 35px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    width: 100%;
+    border:1px solid rgb(133, 133, 133);
+}
+.product-list-search .fa-search{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 9px;
+    border-radius: 0px 5px 5px 0px;
+}
+.product-list-search .fa-search:hover{
+    background: rgb(255, 111, 97);
+    color: white;
+}
+.selectOption{
+    height: 35px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+.selectOption:hover{
+    border: 1px solid rgb(255, 111, 97);
+}
+
+/***************product*******************/
+.product{padding: 0px;}
+.product-div{
+    width: 32%;
+    margin: 15px 5px;
+}
+
+
+/******    right of page  ************/
+.product-list-right{
+    height: auto;
+}
+.product-list-right h2{
+    padding: 0px 0px 0px 25px;
+}
+.product-list-right ul{
+    padding: 0px
+}
+
+
+.Brand-div{
+    margin-top: 60px;
+}
+.Brand-div div{
+    padding: 5px 35px;
+}
+.Brand-div i{
+    width: 25px;
+    text-align: center;
+}
+.Brand-div a{
+    text-decoration: none;
+    color: black;
+}
+.Brand-div a:hover{
+    color: rgb(255, 111, 97);
+} 
+.Brand-div span{
+    float: right;
+    color: #666666;
+}

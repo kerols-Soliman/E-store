@@ -1,0 +1,552 @@
+/*  scrol bar */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+} 
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset  0 0 5px rgb(255, 193, 187); 
+    border-radius: 10px;
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 111, 97); 
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(233, 68, 53); 
+}
+/*     */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: rgb(243, 246, 255);
+}
+/*   nav bar */
+nav{
+    background-color: rgb(255, 111, 97);
+    width: 100%;
+}
+.nav-div-left{
+    float: left;
+}
+.nav-div-right{
+    float: right;
+    padding-right: 30px;
+}
+.links{
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+    
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.links a:hover{
+    color: black;
+}
+
+/*   logo   */
+.logo{
+    padding: 15px 0px 5px;
+    background-color: white;
+}
+.logo-container{
+    padding: 0px 60px;
+    
+}
+.logo-div-image{
+    float: left;
+    width: 25%;
+}
+.logo-search{
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+}
+.logo-likes{
+    float: left;
+    width: 23%;
+}
+.logo-search-input{
+    width: 100%;
+    height: 40px;
+    border:1px solid rgb(255, 193, 187);
+    padding: 0px 15px;
+    border-radius: 5px;
+    font-size: inherit;
+}
+.logo-search div{
+    position: relative;
+}
+.logo-search button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    border: none;
+    background:none;
+    color: rgb(255, 111, 97);
+    width: 35px;
+}
+.logo-search button:hover{
+    border-radius: 5px;
+    color: white;
+    background: rgb(255, 111, 97);
+
+}
+.logo-likes{
+    margin: 20px 10px;
+    text-align: right;
+}
+.logo-likes-heart,.logo-likes-shopping{
+    display: inline;
+    height: 40px;
+    border: 1px solid rgb(255, 111, 97);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.logo-likes a{
+    text-decoration: none;
+    color: rgb(255, 111, 97);
+}
+.logo-likes-heart:hover,.logo-likes-shopping:hover{
+    background-color: rgb(255, 111, 97);
+    color: white;
+}
+
+/* header */
+.header{
+    margin: 10px 60px;
+}
+.header-div-left,.header-div-center,.header-div-right{
+    float: left;
+    height: 400px;
+}
+.header-div-left{
+    width: 25%;
+    background-color: white;
+}
+.header-div-center{
+    width: 50%;
+    text-align: center;
+}
+.header-div-right{
+    width: 23%;
+}
+/*  header-div-left  */
+.header-div-left ul{
+    width: 100%;
+    padding: 20px 0px;
+}
+.header-div-left li{
+    list-style-type: none;
+    border-bottom: 3px solid rgb(243, 246, 255);
+    padding: 7px 30px;
+}
+.header-div-left li a{
+    text-decoration: none;
+}
+.header-div-left li a i{
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    color: rgb(255, 111, 97);
+}
+.header-div-left li a span{
+    color:black;
+}
+.header-div-left li:hover a span{
+    color: rgb(255, 111, 97);
+}
+.header-div-left li:hover a i{
+    color: black;
+}
+
+/*   header-div-center   */
+.header-div-center-image{
+    position: relative;
+}
+.header-div-center-image a{
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 111, 97);
+    
+    color: white;
+    font-size: inherit;
+    text-decoration: none;
+}
+.header-div-center-image i{
+    padding-right: 10px;
+}
+.header-div-center-image a:hover{
+    background-color: white;
+    color: rgb(255, 111, 97);
+}
+/*  */
+.header-div-right-cat1 img,.header-div-right-cat2 img{
+    height: 200px;
+    width: 100%;
+}
+.header-div-right-cat1,.header-div-right-cat2{
+    position: relative;
+}
+.header-div-right-cat1 div,.header-div-right-cat2 div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    text-align: center;
+}
+.header-div-right-cat1:hover div,.header-div-right-cat2:hover div{
+    visibility: visible;
+    background: rgb(255, 111, 97);
+    color: white;
+    opacity: .6;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+/*    sponsor   */
+.sponsor{
+    background: white;
+    padding: 25px 60px;
+    text-align: center;
+    margin: 15px 0px;
+
+}
+.sponsor-div{
+    display: inline;
+    float: left;
+    margin-right: 32px;
+    width: 200px;
+}
+/*    feature   */
+.feature{
+    margin: 15px 0px;
+    padding: 10px 60px;
+}
+.feature-div{
+    float: left;
+    width: 20%;
+    background-color: white;
+    color: rgb(255, 111, 97);
+    margin-right: 37px;
+    padding: 30px 20px;
+    text-align: center;
+}
+.feature-div i{
+    font-size: 50px;
+    padding: 12px;
+}
+
+/*    category   */ 
+.category{
+    margin: 15px 0px;
+    padding: 10px 60px;
+}
+.category-div{
+    float: left;
+    width: 25%;
+    height: 550px;
+    position: relative;
+}
+.category-img-big{
+    height:325px ;
+    position: relative;
+}
+.category-img-small{
+    height: 225px;
+    position: relative;
+}
+.category-div img{
+    height: 100%;
+    width: 100%;
+}
+.category-button{
+    height: 100%;
+    width: 100%;
+    background:  rgb(255, 111, 97);
+    opacity: .7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+.category-button a{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    text-decoration: none;
+    border: 1px solid white;
+    background: white;
+    color: rgb(255, 111, 97);
+    padding: 7px 13px;
+    border-radius: 5px;
+    
+}
+.category-img:hover .category-button{
+    visibility: visible;
+}
+
+.category-img-big:hover .category-button{
+    visibility: visible;
+}
+.category-img-small:hover .category-button{
+    visibility: visible;
+}
+
+/*  call us   */
+.call{
+    margin: 15px 0px;
+    padding: 20px 60px;
+    background:  rgb(255, 111, 97);
+}
+.call-div-left,.call-div-right{
+    float: left;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+.call-div-right{
+    float: right;
+}
+.call-div-right a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+.call-div-right a:hover{
+    color: rgb(255, 111, 97);
+    background: white;
+}
+
+
+/*   product   */
+.product{
+    margin: 10px 0px;
+    padding: 15px 60px;
+}
+.product-title{
+    padding: 1px 50px;
+    background-color: white;
+    color: rgb(255, 111, 97);
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-div{
+    float: left;
+    width: 23%;
+    /*padding: 30px 0px;*/
+    margin-top: 66px;
+    margin-right: 36px;
+    /*position: relative;*/
+    text-align: center;
+}
+.product-img{
+    width: 100%;
+    position: relative;
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+}/********************/
+.product-img img{
+    width: 100%;
+}
+
+.product-top{
+    /*position: absolute;
+    top: -50px;
+    left: 0px;*/
+    width: 100%;
+    padding: 15px 0px;
+    background-color: black;
+}
+.product-top a{
+    text-decoration: none;
+    color: white;
+}
+.product-top div{
+    padding: 10px 0px;
+    color:  rgb(255, 111, 97);
+}
+.product-down{
+    /*position: absolute;
+    bottom: -25px;
+    left: 0px;*/
+    width: 100%;
+    padding: 15px 0px;
+    background-color: black;
+}
+.product-down h2{
+    color: white;
+    display: inline;
+}
+.product-down a{
+    text-decoration: none;
+    display: inline;
+    background: rgb(255, 111, 97);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+.product-overf{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 111, 97);
+    opacity: .6;
+}
+
+.product-div:hover .product-top{
+    background: rgb(255, 111, 97);
+}
+.product-div:hover .product-top div,.product-top a{
+    color: white;
+
+}
+.product-div:hover .product-overf{
+    visibility: visible;
+}
+.product-div:hover .product-down{
+    background: rgb(255, 111, 97);
+}
+.product-div:hover .product-down a{
+    background: white;
+    color: rgb(255, 111, 97);
+}
+.product-div:hover .product-down h2{
+    color: white;
+}
+
+.product-down a:hover{
+    
+    background: white;
+    color: rgb(255, 111, 97);
+}
+/*   Subscribe   */
+.subscribe{
+    width: 30%;
+    position: relative;
+}
+.subscribe form{
+    position: relative;
+}
+.subscribe input[type="email"]{
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    border-color: white;
+}
+.subscribe input[type="submit"]{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    background: rgb(255, 111, 97);
+    color: white;
+}
+.subscribe input[type="submit"]:hover{
+    background: black;
+    color: orange;
+}
+/*   review   */
+.review{
+    margin: 10px 0px;
+    padding: 15px 60px;
+}
+.review-div-left{
+    float: left;
+    background: white;
+    margin-right: 27px;
+    width: 49%;
+}
+.review-div-right{
+    float: left;
+    background: white;
+    width: 49%;
+}
+.review-image ,.review-text{
+    float: left;
+}
+.review i{
+    color: rgb(255, 111, 97);
+}
+.review-text{
+    padding: 20px;
+}
+
+/*   footer  */
+footer{
+    margin: 20px 0px 0px;
+    padding: 15px 60px;
+    background: white;
+}
+.footer-div,.footer-follow{
+    float: left;
+    width: 23%;
+    margin-right: 35px;
+}
+.footer-div div{
+    padding: 5px 0px;
+}
+.footer-div i{
+    width: 25px;
+    text-align: center;
+}
+.footer-follow a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.footer-follow a:hover{
+    color: rgb(255, 111, 97);
+    border-color: rgb(255, 111, 97);
+}
+.footer-div a{
+    text-decoration: none;
+    color: black;
+}
+.footer-div a:hover{
+    color: rgb(255, 111, 97);
+}  
+/*  end  */
+.end{
+    margin: 0px;
+    padding: 15px 60px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/*   button-up  */
+.button-up a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    background: rgb(255, 111, 97);
+    border-radius: 5px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-align: center;
+}
